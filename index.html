@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/litera/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 my-3 p-2 border-bottom">
+          <a href="" class="text-primary text-decoration-none"
+            ><h2><i class="fa-solid fa-shop me-2"></i>My Shop</h2></a
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-7">
+          <div class="row" id="product-div"></div>
+        </div>
+        <div class="col-12 col-lg-5">
+          <div class="card p-3">
+            <div
+              class="d-flex align-items-center justify-content-between border-bottom"
+            >
+              <h3 class="text-primary">Cart List</h3>
+              <div class="d-flex align-items-center text-primary">
+                <i class="fa-solid fa-cart-shopping fs-3 me-2"></i>
+                <span class="badge bg-primary" id="totalCart">0</span>
+              </div>
+            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Item</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody class="carts-table"></tbody>
+            </table>
+            <div class="show">
+              <h5 class="my-3 text-center text-primary">No item in cart.</h5>
+              <hr />
+            </div>
+            <div
+              class="d-flex align-items-center justify-content-between text-primary"
+            >
+              <h5>Total Price -</h5>
+              <span class="fs-5 fw-bold" id="totalPrice">$ 000.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./products.js"></script>
+  <script src="app.js"></script>
+</html>
